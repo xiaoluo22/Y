@@ -1,0 +1,71 @@
+* {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		body {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		h1 {
+			font-family: '微软雅黑';
+			color: red;
+			font-size: 50px;
+			border: 0px solid black;
+			width: 400px;
+			text-align: center;
+			margin: 50px 0px 0px 15%;
+			font-size: 40pt;
+			filter: shadow(color=black);
+			width: 71.27%;
+			color: #e41616;
+			line-height: 150%;
+			font-family: 华文彩云;
+			height: 60px;
+		}
+
+		.heart {
+			width: 200px;
+			height: 200px;
+			background: #e74c3c;
+			transform: rotate(45deg);
+			position: relative;
+			animation-name: heart;
+			animation-duration: 1s;
+			animation-iteration-count: 100;
+			position: absolute;
+			left: 84%;
+			top: 73%;
+
+		}
+
+		.heart::before {
+			content: '';
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background: #e74c3c;
+			position: absolute;
+			transform: translate(-50%, 0px);
+		}
+
+		.heart::after {
+			content: '';
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background: #e74c3c;
+			position: absolute;
+			transform: translate(0%, -50%);
+		}
+
+		@keyframes heart {
+			from {
+				transform: scale(.3) rotate(45deg);
+			}
+
+			to {
+				transform: scale(1) rotate(45deg);
+			}

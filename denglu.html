@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>今天的你一定很开心趴 </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+<!-- Custom Theme files -->
+<link rel="stylesheet" type="text/css" href="https://www.jq22.com/jquery/font-awesome.4.6.0.css">
+<link href="css/snow.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+
+</head>
+<body>
+<div class="snow-container">
+			  <div class="snow foreground"></div>
+			  <div class="snow foreground layered"></div>
+			  <div class="snow middleground"></div>
+			  <div class="snow middleground layered"></div>
+			  <div class="snow background"></div>
+			  <div class="snow background layered"></div>
+			</div>
+
+<div class="top-buttons-agileinfo">
+<a href="denglu.html"  class="active">登录</a><a href="zhuce.html">注册</a>
+</div>
+<h1 style="color: pink;">祝你生日快乐呀！</h1>
+<div class="main-agileits">
+<!--form-stars-here-->
+		<div class="form-w3-agile">
+			<h2 class="sub-agileits-w3layouts">登录系统</h2>
+			<form action="#" method="post">
+<div class="text">
+				<i class="fa fa-user-o" aria-hidden="true"></i><!-- Font Awesome -->
+				<input type="text" placeholder="Username" id="name">
+			</div>
+			<div class="text">
+				<i class="fa fa-lock" aria-hidden="true"></i><!-- Font Awesome -->
+				<input type="password" placeholder="Password" id="pass">
+			</div>
+					<a href="#" class="forgot-w3layouts">忘记密码 ?</a>
+				<div class="submit-w3l">
+                    <button onclick="login()">登录</button>
+				</div>
+				<p class="p-bottom-w3ls"><a href="signup.html">特别的日子</a>爱你呀，傻逼东西.</p>
+			</form>
+		</div>
+		</div>
+<!--//form-ends-here-->
+<!-- copyright -->
+    <div class="copyright w3-agile">
+        <p> 在这里祝可爱的小公主又长大的一岁 <a href="#">oever</a></p>
+    </div>
+	<!-- //copyright --> 
+	<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+</body>
+<script type="text/javascript">
+	function login() {
+		var username = document.getElementById("name").value;
+		var password = document.getElementById("pass").value;
+		if (username == "xiaoluo" && password == "5201314") {
+			alert("登录成功");
+			window.location.href="zhengwangye.html";
+			window.event.returnValue=false;
+			return true;
+		} else {
+			alert("账号或密码错误");
+			window.location.href ="denglu.html";
+			window.event.returnValue=false;
+			return false;
+		}
+	}
+</script>
+</html>
