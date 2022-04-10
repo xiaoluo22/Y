@@ -6,6 +6,14 @@
 		<link rel="stylesheet" type="text/css" href="css/zhu.css"/>
 	</head>
 	<script src="js/123.min.js"></script>
+			<style type="text/css">
+			div {
+				width: 800px;
+				height: 30px;
+				border: 0px solid #ef3333;
+				color: #000000;
+			}
+		</style>
 	<body>
 	<div id="d1">
 	<h1><p>❤生日快乐❤</p></h1>
@@ -122,5 +130,23 @@
 		    });
 		</script>
 		</div>
+					</script>
+			<div id = "test" > < /div>	
+			<script>
+				var text = "我有一个梦想我有一个梦想我有一个梦想我有一个梦想";
+				var num = text.length;
+
+				var i = 0;
+
+				function show() {
+					var shower = text.substr(0, i);
+					document.getElementById("test").innerHTML = shower;
+					i++;
+					if (i + 1 >= num) {
+						clearInterval("done");
+					}
+				}
+				var done = setInterval("show()", 500);
+			</script>
 	</body>
 </html>
